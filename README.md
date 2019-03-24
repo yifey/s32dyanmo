@@ -1,8 +1,9 @@
-##Objective
+# README.md
+## Objective
 This script can register logs to the AWS Dynamo DB. Uploading event will be triggered by uploading log files to s3 bucket.
 
 
-##Setup Steps
+## Setup Steps
 You need to perform following steps to run this script.
 
 1. Create a s3 bucket.
@@ -19,20 +20,20 @@ bob 31
 '''
 
 
-##1. Create a s3 bucket.
+## 1. Create a s3 bucket.
 You need to create a s3 bucket, say my-log-bucket, that will store original log data.
 
-##2. Create an IAM role.
+## 2. Create an IAM role.
 Prepare a new IAM role, say my-iam-role, with following policies.
 
 - AmazonDynamoDBFullAccess
 - AmazonS3ReadOnlyAccess
 - CloudWatchLogsFullAccess
 
-##3. Create a DynamoDB table.
+## 3. Create a DynamoDB table.
 Next, you should create a DynamoDB table, say my-log-table, that will eventually store logs.
 
-##4. Create a lambda function
+## 4. Create a lambda function
 Then, you can create a lambda function with following options.
 
 - Function Name: your-function-name
@@ -48,7 +49,7 @@ For lambda function, you may can the s32dynamo.py in this repository. Please mak
 
 Now we are ready, save this function.
 
-##5. Uploading a log file to the s3 bucket.
+## 5. Uploading a log file to the s3 bucket.
 You can test the function by uploading the log file "sample.txt" in this repository to your s3 bucket.
 If the function works correctly, the data will be added to your dynamo table.
 
