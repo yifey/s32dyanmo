@@ -12,13 +12,7 @@ You need to perform following steps to run this script.
 4. Create a lambda function.
 5. Uploading a log file to the s3 bucket.
 
-In this readme, we assume following name and age data, sample.txt, to register.
-
-'''sample.txt
-alice 20
-bob 31
-'''
-
+In this readme, we assume sample.txt, to register.
 
 ## 1. Create a s3 bucket.
 You need to create a s3 bucket, say my-log-bucket, that will store original log data.
