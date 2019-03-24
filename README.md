@@ -1,4 +1,3 @@
-#README.md
 ##Objective
 This script can register logs to the AWS Dynamo DB. Uploading event will be triggered by uploading log files to s3 bucket.
 
